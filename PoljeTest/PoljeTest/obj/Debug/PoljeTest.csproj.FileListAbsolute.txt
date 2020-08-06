@@ -1,0 +1,7 @@
+C:\Users\REV\Documents\karatana\PoljeTest\PoljeTest\bin\Debug\PoljeTest.exe.config
+C:\Users\REV\Documents\karatana\PoljeTest\PoljeTest\bin\Debug\PoljeTest.exe
+C:\Users\REV\Documents\karatana\PoljeTest\PoljeTest\bin\Debug\PoljeTest.pdb
+C:\Users\REV\Documents\karatana\PoljeTest\PoljeTest\obj\Debug\PoljeTest.csprojAssemblyReference.cache
+C:\Users\REV\Documents\karatana\PoljeTest\PoljeTest\obj\Debug\PoljeTest.csproj.CoreCompileInputs.cache
+C:\Users\REV\Documents\karatana\PoljeTest\PoljeTest\obj\Debug\PoljeTest.exe
+C:\Users\REV\Documents\karatana\PoljeTest\PoljeTest\obj\Debug\PoljeTest.pdb
