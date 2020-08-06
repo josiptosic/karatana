@@ -16,6 +16,7 @@ namespace karatana
         {
             if (HealthPt >= MaxHit) { HealthPt = MaxHit; }
             else if (HealthPt <= MinHit) { HealthPt = MinHit; }
+            else HealthPt += pt;
 
         }
     }

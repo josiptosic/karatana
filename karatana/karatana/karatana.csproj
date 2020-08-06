@@ -44,6 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character.cs" />
+    <Compile Include="Damageable.cs" />
+    <Compile Include="GameManager.cs" />
+    <Compile Include="IDamageable.cs" />
+    <Compile Include="MaterialObject.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

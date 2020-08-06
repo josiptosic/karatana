@@ -14,7 +14,7 @@ namespace karatana
         Player p2 = new Player();
         Random rnd = new Random();
 
-        public object Conflict(Player p1, Player p2)
+        public Player Conflict(Player p1, Player p2)
         {
             while (true) 
             {

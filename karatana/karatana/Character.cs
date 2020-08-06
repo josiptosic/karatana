@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace karatana
 {
-    public abstract class Character
+    public abstract class Character : Damageable, IDamageable
     {
-        public int HealthPt { get; set; }
+        public Character()
+        {
+            HealthPt = 100;
+        }
+        
     }
 }

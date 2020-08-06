@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -11,19 +12,26 @@ namespace karatana
     {
         static void Main(string[] args)
         {
-            while (true) 
-            {
-                
-                for (int i = 0; i < 10; i++)
-                {
-                    Console.WriteLine("##########");
-                    Console.WriteLine("          ");
-                    
-                }
-                
-                Console.Clear();
-                
-            }
+            //var player = new Player();
+            //IDamageable p1=player;
+            //p1 = new MaterialObject();
+            //player.i = 2;
+            GameManager gm = new GameManager();
+            Player p1 = new Player();
+            Player p2 = new Player();
+            p1.HealthPt = 1000;
+            p2.HealthPt = 1000;
+            p1.Name = "Iks";
+            p2.Name = "Oks";
+            Console.WriteLine($"{gm.Conflict(p1, p2).Name} wins!");
+            
+
+
+
         }
+
+        
+
+
     }
 }
