@@ -18,7 +18,7 @@ namespace karatana
         {
             while (true) 
             {
-                p1.HealthChange(-(rnd.Next(5, 10)));
+                p1.HealthChange(-(rnd.Next(1, 5)));
                 p2.HealthChange(-(rnd.Next(5, 10)));
                 Thread.Sleep(1000);
                 Console.WriteLine($" Player 1: {p1.HealthPt}, Player 2: {p2.HealthPt}.");
