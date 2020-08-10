@@ -8,10 +8,7 @@ namespace karatana
 {
     public abstract class Character : Damageable, IDamageable
     {
-        public Character()
-        {
-            HealthPt = 100;
-        }
+        
         
     }
 }

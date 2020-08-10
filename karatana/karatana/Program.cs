@@ -23,7 +23,7 @@ namespace karatana
             p2.HealthPt = 1000;
             p1.Name = "Iks";
             p2.Name = "Oks";
-            Console.WriteLine($"{gm.Conflict(p1, p2).Name} wins!");
+            
             
 
 

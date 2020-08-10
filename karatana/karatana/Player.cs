@@ -9,12 +9,7 @@ namespace karatana
 {
     public class Player : Character
     {
-        public Player()
-        {
-            HealthPt = 100;
-        }
 
-        public int i;
         public string Name { get; set; }
     }
 }

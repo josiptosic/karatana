@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace karatana
 {
-    public class GameManager
+    class GameManager
     {
         Player p1 = new Player();
         Player p2 = new Player();
-        Random rnd = new Random();
+        static Random rnd = new Random();
 
-        public Player Conflict(Player p1, Player p2)
+        public static Player Conflict(Player p1, Player p2)
         {
             while (true) 
             {
@@ -26,7 +26,7 @@ namespace karatana
             }
             if (p1.HealthPt <= 0) return p2;
             else if (p2.HealthPt <= 0) return p1;
-            else return null;
+            else return default(Player);
         }
 
         
