@@ -51,7 +51,6 @@
     <Compile Include="FistSpell.cs" />
     <Compile Include="GameManager.cs" />
     <Compile Include="HealBuff.cs" />
-    <Compile Include="ICharacter.cs" />
     <Compile Include="ICombat.cs" />
     <Compile Include="IDamageable.cs" />
     <Compile Include="MaterialObject.cs" />

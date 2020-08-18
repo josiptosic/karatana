@@ -8,7 +8,6 @@ namespace karatana
 {
     public class HealBuff : BuffEvent
     {
-
         public override void Tick(Character c) 
         {
             c.Heal(2);

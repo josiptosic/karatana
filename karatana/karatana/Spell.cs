@@ -10,14 +10,11 @@ namespace karatana
     {
         public Spell()
         {}
-
         public abstract void CastSpell(Character ch1, IDamageable ch2);
-
         public abstract bool Requirements(Character ch1);
-
+        
         List<Buff> buffs = new List<Buff>();
         List<Buff> debuffs = new List<Buff>();
-
         public string Name { get; set; }
        
     }

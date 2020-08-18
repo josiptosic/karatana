@@ -9,9 +9,6 @@ namespace karatana
     public interface ICombat
     {
         void Decision();
-
-
-
         IDamageable Target { get; set; }
     }
 }

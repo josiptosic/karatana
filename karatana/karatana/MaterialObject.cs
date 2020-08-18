@@ -9,8 +9,6 @@ namespace karatana
     public class MaterialObject : Damageable, IDamageable
     {
         public MaterialObject(int HealthPt) : base(HealthPt)
-        {
-            
-        }  
+        {}  
     }
 }

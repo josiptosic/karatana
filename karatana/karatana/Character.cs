@@ -14,20 +14,21 @@ namespace karatana
             Spells.Add(new AgilityReductionSpell());
             Spells.Add(new FistSpell());
             Spells.Add(new AgilityReductionSpell());
+
             Buffs = new List<BuffEvent>();
-            
+
             Strength = 10;
             Agility = 30;
-
         }
 
         public void OnTurnEnd() 
         {
-            
-            for (int i=Buffs.Count-1;i>=0;i--) 
+
+            for (int i = Buffs.Count - 1; i >= 0; i--) 
             {
                 Buffs[i].Duration--;
                 Buffs[i].Tick(this);
+
                 if(Buffs[i].Duration <= 0) 
                 {
                     Buffs[i].Removed();

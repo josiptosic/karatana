@@ -12,17 +12,13 @@ namespace karatana
         {
             this.HealthPt = HealthPt;
             this.MaxHit = HealthPt;
-            
         }
-
-
 
         public int MaxHit { get; set; }
         public const int MinHit = 0;
         
         public int HealthPt { get; set; }
         
-
         public virtual void RecieveDamage(int pt)
         {
             HealthPt -= Math.Abs(pt);

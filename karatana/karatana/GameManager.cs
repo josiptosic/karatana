@@ -10,13 +10,11 @@ using System.Threading.Tasks;
 namespace karatana
 {
     public class GameManager
-    {
-        
+    {       
         Player p1 = new Player(100);
         Enemy p2 = new Enemy(100);
         
         public static Random rnd = new Random();
-
 
         public static Character Conflict(Player p1, Enemy p2)
         {
@@ -43,10 +41,6 @@ namespace karatana
             if (p1.HealthPt <= 0) return p2;
             else if (p2.HealthPt <= 0) return p1;
             else return default(Player);
-
-        }
-
-        
-        
+        }                
     }
 }

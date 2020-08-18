@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 namespace karatana
 {
     public class AgilityReductionSpell : Spell
-
     {
         public AgilityReductionSpell()
         {
@@ -30,7 +29,5 @@ namespace karatana
         }
 
         public int AgilityDuration { get; set;}
-
-        
     }
 }

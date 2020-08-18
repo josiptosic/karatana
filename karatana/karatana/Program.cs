@@ -31,12 +31,7 @@ namespace karatana
             Console.WriteLine($"\t\t\t Player: {p1.HealthPt}, Enemy: {p2.HealthPt}.");
 
             Character pobjednik = GameManager.Conflict(p1, p2);
-            Console.WriteLine($"Pobjednik je {pobjednik.Name}!");
-            
-       }
-
-        
-
-
+            Console.WriteLine($"Pobjednik je {pobjednik.Name}!");            
+        }       
     }
 }
