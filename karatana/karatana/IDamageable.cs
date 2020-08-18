@@ -9,6 +9,8 @@ namespace karatana
     public interface IDamageable
     {
         int HealthPt { get; set; }
-        void HealthChange(int pt);       
+
+        void RecieveDamage(int pt);
+        void Heal(int pt);
     }
 }

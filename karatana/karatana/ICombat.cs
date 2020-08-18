@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace karatana
 {
-    public class MaterialObject : Damageable, IDamageable
+    public interface ICombat
     {
-        public MaterialObject(int HealthPt) : base(HealthPt)
-        {
-            
-        }  
+        void Decision();
+
+
+
+        IDamageable Target { get; set; }
     }
 }
