@@ -1,7 +1,7 @@
 C:\Users\REV\Documents\karatana\karatana\karatana\bin\Debug\karatana.exe.config
 C:\Users\REV\Documents\karatana\karatana\karatana\bin\Debug\karatana.exe
 C:\Users\REV\Documents\karatana\karatana\karatana\bin\Debug\karatana.pdb
-C:\Users\REV\Documents\karatana\karatana\karatana\obj\Debug\karatana.csprojAssemblyReference.cache
 C:\Users\REV\Documents\karatana\karatana\karatana\obj\Debug\karatana.csproj.CoreCompileInputs.cache
 C:\Users\REV\Documents\karatana\karatana\karatana\obj\Debug\karatana.exe
 C:\Users\REV\Documents\karatana\karatana\karatana\obj\Debug\karatana.pdb
+C:\Users\REV\Documents\karatana\karatana\karatana\obj\Debug\karatana.csprojAssemblyReference.cache

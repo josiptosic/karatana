@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace karatana
 {
-    public class MaterialObject : Damageable
+    public interface IHealthPt
     {
-        public MaterialObject(IHealthPt Health) : base(Health)
-        {          
-        }  
+        int HealthPt { get; set; }
     }
 }

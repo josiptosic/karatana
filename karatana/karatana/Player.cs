@@ -9,11 +9,11 @@ namespace karatana
 {
     public class Player : Character, ICombat
     {
-        public Player(int HealthPt) : base(HealthPt)
+        public Player(Stats stats) : base(stats)
         {
             Target = default(Character);
         }
-
+        public IDamageable Target { get; set; }
         public void Decision() 
         {
             Console.ForegroundColor = ConsoleColor.Green;
@@ -36,7 +36,6 @@ namespace karatana
             Console.WriteLine();
 
             string d = Console.ReadLine();
-
             
             int broj = 0;
             int.TryParse(d, out broj);
@@ -57,8 +56,6 @@ namespace karatana
                 Console.WriteLine("Invalid selection!");
                 Decision(); 
             }
-        }
-
-        public IDamageable Target { get; set; }      
+        } 
     }
 }

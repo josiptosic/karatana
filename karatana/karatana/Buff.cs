@@ -9,17 +9,19 @@ namespace karatana
     public delegate bool Buff(int duration);
     public abstract class BuffEvent
     {
+        public int Duration { get; set; }
+        public int _id;
+        public Stats stats { get; set; }
+
         public virtual void Applied() { }
 
         public virtual void Removed() { }
 
         public virtual void Tick(Character c) 
         { 
-            c.HealthPt+=2;
+            c.stats.HealthPt+=2;
         }
 
-        public int Duration { get; set; }
-        public int _id;
-   
+        
     }
 }

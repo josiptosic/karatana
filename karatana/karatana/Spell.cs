@@ -15,7 +15,6 @@ namespace karatana
         
         List<Buff> buffs = new List<Buff>();
         List<Buff> debuffs = new List<Buff>();
-        public string Name { get; set; }
-       
+        public string Name { get; set; }       
     }
 }

@@ -8,6 +8,8 @@ namespace karatana
 {
     public class AgilityReductionSpell : Spell
     {
+        public int AgilityDuration { get; set; }
+
         public AgilityReductionSpell()
         {
             AgilityDuration = 5;
@@ -18,16 +20,13 @@ namespace karatana
         {
             var ToCharacter = to as Character; 
             
-            ToCharacter.Agility *= 1 / 2;
+            ToCharacter.stats.Agility *= 1 / 2;
             Console.WriteLine("Agility halved!");
         }
-
         
         public override bool Requirements(Character ch1)
         {
-            return ch1.Agility > 0;
-        }
-
-        public int AgilityDuration { get; set;}
+            return ch1.stats.Agility > 0;
+        }        
     }
 }

@@ -6,31 +6,31 @@ using System.Threading.Tasks;
 
 namespace karatana
 {
-    public abstract class Damageable
+    public abstract class Damageable:IDamageable
     {
-        public Damageable(int HealthPt)
+        public Damageable(IHealthPt Health) 
         {
-            this.HealthPt = HealthPt;
-            this.MaxHit = HealthPt;
+            this.Health = Health;
+            
+            this.MaxHit = this.Health.HealthPt;
         }
 
         public int MaxHit { get; set; }
         public const int MinHit = 0;
-        
-        public int HealthPt { get; set; }
-        
+        public IHealthPt Health { get; set; }
+
         public virtual void RecieveDamage(int pt)
         {
-            HealthPt -= Math.Abs(pt);
+            this.Health.HealthPt -= Math.Abs(pt);
             
-            if (HealthPt <= MinHit) { HealthPt = MinHit; }
+            if (this.Health.HealthPt <= MinHit) { this.Health.HealthPt = MinHit; }
         }
 
         public virtual void Heal(int pt)
         {
-            HealthPt += Math.Abs(pt);
+            this.Health.HealthPt += Math.Abs(pt);
 
-            if (HealthPt >= MaxHit) { HealthPt = MaxHit; }
-        }
+            if (this.Health.HealthPt >= MaxHit) { this.Health.HealthPt = MaxHit; }
+        }        
     }
 }

@@ -10,15 +10,11 @@ using System.Threading.Tasks;
 namespace karatana
 {
     public class GameManager
-    {       
-        Player p1 = new Player(100);
-        Enemy p2 = new Enemy(100);
-        
+    {              
         public static Random rnd = new Random();
 
         public static Character Conflict(Player p1, Enemy p2)
-        {
-            
+        {           
             while (true) 
             {
                 p1.Target = p2;
@@ -34,12 +30,12 @@ namespace karatana
 
                 Console.Clear();
 
-                Console.WriteLine($"\t\t\t Player: {p1.HealthPt}, Enemy: {p2.HealthPt}.");
-                if (p1.HealthPt <= 0 || p2.HealthPt <= 0) break;
+                Console.WriteLine($"\t\t\t Player: {p1.stats.HealthPt}, Enemy: {p2.stats.HealthPt}.");
+                if (p1.stats.HealthPt <= 0 || p2.stats.HealthPt <= 0) break;
             }
 
-            if (p1.HealthPt <= 0) return p2;
-            else if (p2.HealthPt <= 0) return p1;
+            if (p1.stats.HealthPt <= 0) return p2;
+            else if (p2.stats.HealthPt <= 0) return p1;
             else return default(Player);
         }                
     }

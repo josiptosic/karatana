@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace karatana
 {
-
-
     public class Enemy : Character, ICombat
     {
-        public Enemy(int HealthPt) : base(HealthPt)
+        public Enemy(Stats stats) : base(stats)
         {
             Spells = new List<Spell>();
             Spells.Add(new FistSpell());
@@ -20,9 +18,11 @@ namespace karatana
             Spells.Add(new FistSpell());
             Spells.Add(new FistSpell());
 
-            Strength = 5;
-            Agility = 20;
+            stats.Strength = 5;
+            stats.Agility = 20;
         }
+
+        public IDamageable Target { get; set; }
 
         public void Decision()
         {
@@ -30,10 +30,7 @@ namespace karatana
             if (selectedSpell.Requirements(this))
             {
                 selectedSpell.CastSpell(this, Target);
-
             }
         }
-
-        public IDamageable Target { get; set; }
     }
 }
