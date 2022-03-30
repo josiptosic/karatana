@@ -8,9 +8,9 @@ namespace karatana
 {
     public abstract class Damageable:IDamageable
     {
-        public Damageable(IHealthPt Health) 
+        public Damageable(IHealthPt health) 
         {
-            this.Health = Health;
+            this.Health = health;
             
             this.MaxHit = this.Health.HealthPt;
         }

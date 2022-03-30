@@ -17,17 +17,17 @@ namespace karatana
         {
             var rollResult = GameManager.rnd.Next(0, 101);
             Console.ForegroundColor = ConsoleColor.Magenta;
-            if (rollResult < from.stats.Agility) 
+            if (rollResult < from.Stats.Agility) 
             { 
-                to.RecieveDamage((from.stats.Strength) * 2);
+                to.RecieveDamage((from.Stats.Strength) * 2);
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Krita u Bila!"); }
-            else to.RecieveDamage(from.stats.Strength);
+            else to.RecieveDamage(from.Stats.Strength);
         }
 
         public override bool Requirements(Character ch1)
         {
-            return ch1.stats.Strength > 0;
+            return ch1.Stats.Strength > 0;
         }
     }
 }

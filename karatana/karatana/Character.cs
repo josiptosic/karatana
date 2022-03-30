@@ -9,9 +9,9 @@ namespace karatana
 {
     public abstract class Character : Damageable
     {
-        public Character(Stats stats):base(stats) 
+        public Character(Stats Stats):base(Stats) 
         {
-            this.stats = stats;
+            this.Stats = Stats;
 
             Spells = new List<Spell>();
             Spells.Add(new AgilityReductionSpell());
@@ -30,7 +30,7 @@ namespace karatana
         public List<Spell> Spells;
         public List<BuffEvent> Buffs;
 
-        public Stats stats { get; set; }
+        public Stats Stats { get; private set; }
 
         public void OnTurnEnd() 
         {

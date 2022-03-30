@@ -30,12 +30,14 @@ namespace karatana
 
                 Console.Clear();
 
-                Console.WriteLine($"\t\t\t Player: {p1.stats.HealthPt}, Enemy: {p2.stats.HealthPt}.");
-                if (p1.stats.HealthPt <= 0 || p2.stats.HealthPt <= 0) break;
+                Console.ForegroundColor = ConsoleColor.Gray;
+
+                Console.WriteLine($"\t\t\t Player: {p1.Stats.HealthPt}, Enemy: {p2.Stats.HealthPt}.");
+                if (p1.Stats.HealthPt <= 0 || p2.Stats.HealthPt <= 0) break;
             }
 
-            if (p1.stats.HealthPt <= 0) return p2;
-            else if (p2.stats.HealthPt <= 0) return p1;
+            if (p1.Stats.HealthPt <= 0) return p2;
+            else if (p2.Stats.HealthPt <= 0) return p1;
             else return default(Player);
         }                
     }

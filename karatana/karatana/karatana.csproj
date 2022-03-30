@@ -48,6 +48,9 @@
     <Compile Include="Character.cs" />
     <Compile Include="Damageable.cs" />
     <Compile Include="Enemy.cs" />
+    <Compile Include="Enums\EquipmentSlot.cs" />
+    <Compile Include="Enums\EquipType.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="FistSpell.cs" />
     <Compile Include="GameManager.cs" />
     <Compile Include="HealBuff.cs" />

@@ -17,9 +17,6 @@ namespace karatana
             Spells.Add(new FistSpell());
             Spells.Add(new FistSpell());
             Spells.Add(new FistSpell());
-
-            stats.Strength = 5;
-            stats.Agility = 20;
         }
 
         public IDamageable Target { get; set; }
